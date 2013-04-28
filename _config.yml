@@ -1,4 +1,5 @@
 root: /
 permalink: /:year/:month/:title
+# markdown: rdiscount
 pygments: true
 data_format: "ordinal"
