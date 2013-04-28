@@ -1,5 +1,4 @@
 root: /
-permalink: /blog/:year/:month:/:title
-markdown: rdiscount
+permalink: /:year/:month/:title
 pygments: true
 data_format: "ordinal"
