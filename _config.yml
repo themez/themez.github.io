@@ -1,3 +1,4 @@
+root: /
 permalink: /:year/:month/:day/:title
 pygments: true
 #lsi: true
