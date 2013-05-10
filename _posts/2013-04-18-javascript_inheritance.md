@@ -129,7 +129,7 @@ title: 谈谈几种javascript继承模式
         });
 
 试试输出？
-如果对这种继承机制想有更深的了解，可以看看jquery作者john resig的[原作]http://ejohn.org/blog/simple-javascript-inheritance/
+如果对这种继承机制想有更深的了解，可以看看jquery作者john resig的[原作](http://ejohn.org/blog/simple-javascript-inheritance/)
   
 这篇文章到这里基本可以结束了，但是我还想再谈谈javascript本身的prototype继承为什么坑爹，我们为什么要用这么复杂的代码来实现其他语言里很基本的继承。
   

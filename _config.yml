@@ -1,5 +1,4 @@
-root: /
-permalink: /:year/:month/:title
-# markdown: rdiscount
+permalink: /:year/:month/:day/:title
 pygments: true
+#lsi: true
 data_format: "ordinal"
