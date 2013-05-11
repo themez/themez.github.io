@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 谈谈几种javascript继承模式
+category: tech
+tags: [javascript]
 ---
 
 我们知道Javascript对继承的语言级支持是基于prototype的，但是prototype的支持非常基本，让我们很难写出reusable的code，因此我们常常要自己搭建简单的继承框架以实现代码复用。
