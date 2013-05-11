@@ -1,6 +1,6 @@
 ---
 layout: page
-title: GRANDLINE
+title: Blog Home
 #tagline: Supporting tagline
 ---
 {% include JB/setup %}
