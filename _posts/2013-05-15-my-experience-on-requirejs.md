@@ -76,6 +76,6 @@ To resolve this problem, we have to enforce our client to adapte requirejs too.
 
 But this is not we want, we've broken back compatibility.
 
-Now we've decide, in short term, to use requirejs in development, and implement our own AMD module loader in release, which we have full control.
+Now we've decided, in short term, to use requirejs in development, and implement our own AMD module loader in release, which we have full control.
 
 This is a fail case of adapting requirejs, I try to mix requirejs convention code and synchronous code together, it just won't work, I've underestimate the impact.
