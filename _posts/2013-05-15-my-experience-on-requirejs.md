@@ -74,7 +74,7 @@ To resolve this problem, we have to enforce our client to adapte requirejs too.
 		});
 	</script>
 
-About this is not we want, we've broken back compatibility.
+But this is not we want, we've broken back compatibility.
 
 Now we've decide, in short term, to use requirejs in development, and implement our own AMD module loader in release, which we have full control.
 
