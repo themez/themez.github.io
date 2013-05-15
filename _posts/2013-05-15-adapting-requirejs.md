@@ -1,6 +1,6 @@
 ---
 layout: post
-title: My experience on adapting requirejs
+title: How did I screwed our project by adapting requirejs
 category: tech
 tags: [requirejs, javascript, AMD]
 ---
