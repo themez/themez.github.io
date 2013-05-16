@@ -9,7 +9,7 @@ I've recently screwed our project, by introducing requirejs as a module loader. 
 
 We have a [AMD](https://github.com/amdjs/amdjs-api/wiki/AMD) module loader before, which is developed by ourselves, it doesn't have so much features as requirejs, and the interfaces are sort of, naive, and verbose. The module dependencies is written in annotation, so modules have to be compiled before user can run it in browser, and the build process is not fast enough to feel comfortable.
 
-I decided to make this changed, at first I tried to develop a new AMD module loader, but soon I realized that I could never make it better as requirejs, so I decided to adapt requirejs, I knew there're some differences between implementation of our loader and requirejs's, but I thought I can eliminate most of them by attaching some extra codes, and ask our customers to change client codes a little to eliminates the others. So I did.
+I decided to make this changed, at first I tried to develop a new AMD module loader, but soon I realized that I could never make it better as requirejs, so I decided to adopt requirejs, I knew there're some differences between implementation of our loader and requirejs's, but I thought I can eliminate most of them by attaching some extra codes, and ask our customers to change client codes a little to eliminates the others. So I did.
 
 After the migration been done, problems come, almost immediately. 
 
@@ -64,7 +64,7 @@ Client assume that the theme of "flashy" should be available after the script lo
 	</script>
 
 
-To resolve this problem, we have to enforce our client to adapte requirejs too.
+To resolve this problem, we have to enforce our client to adopt requirejs too.
 
 	<script src="flashy_theme.js"></script>
 	<script>
@@ -78,4 +78,4 @@ But this is not we want, we've broken back compatibility.
 
 Now we've decided, in short term, to use requirejs in development, and implement our own AMD module loader in release, which we have full control.
 
-This is a fail case of adapting requirejs, I try to mix requirejs convention code and synchronous code together, it just won't work, I've underestimate the impact.
+This is a fail case of adopting requirejs, I try to mix requirejs convention code and synchronous code together, it just won't work, I've underestimate the impact.
