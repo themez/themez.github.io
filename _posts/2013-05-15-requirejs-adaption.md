@@ -1,11 +1,11 @@
 ---
 layout: post
-title: How did I screwed our project by adapting requirejs
+title: Adapting Requirejs
 category: tech
 tags: [requirejs, javascript, AMD]
 ---
 
-I've recently screwed our project, by introducing requirejs as a module loader. Now customers complain everyday, why XXX feature not works? Why it becomes so slow?
+I've recently almost screwed our project, by introducing requirejs as a module loader. Now customers complain, why XXX feature not works? Why it becomes so slow?
 
 We have a [AMD](https://github.com/amdjs/amdjs-api/wiki/AMD) module loader before, which is developed by ourselves, it doesn't have so much features as requirejs, and the interfaces are sort of, naive, and verbose. The module dependencies is written in annotation, so modules have to be compiled before user can run it in browser, and the build process is not fast enough to feel comfortable.
 
@@ -64,7 +64,7 @@ Client assume that the theme of "flashy" should be available after the script lo
 	</script>
 
 
-To resolve this problem, we have to enforce our client to adapt requirejs too.
+To resolve this problem, we have to change our user code to adapt requirejs too.
 
 	<script src="flashy_theme.js"></script>
 	<script>
@@ -74,8 +74,6 @@ To resolve this problem, we have to enforce our client to adapt requirejs too.
 		});
 	</script>
 
-But this is not we want, we've broken back compatibility.
-
 Now we've decided, in short term, to use requirejs in development, and implement our own AMD module loader in release, which we have full control.
 
-This is a fail case of adapting requirejs, I try to mix requirejs convention code and synchronous code together, it just won't work, I've underestimate the impact.
+This is not a very good case of adapting requirejs at first, but I try to mix requirejs convention code and our synchronous code together, we should adapting the async mode in module develoption soon.
