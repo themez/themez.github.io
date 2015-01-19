@@ -5,8 +5,6 @@ category: tech
 tags: [RabbitMQ]
 ---
 
-RabbitMQ In Practice
-===
 
 We've bean using RabbitMQ as our message exchange in payment module for more than one year from January last year. It's famous on its good performance and stability as an message broker, today I'm not gonna give yet another prove to its performance. I want to talk something on engineering practice, how to ensure not a single messages not lost, how to make use of it's core features, and also build missing features or facilities which are not shipped within the package. Give a conclusion from the practice in the last year.
 
